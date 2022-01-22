@@ -3,6 +3,7 @@
 YOU ARE NOT ALLOWED TO MODIFY ANY FUNCTION DEFINATION's PROVIDED.
 WRITE YOUR CODE IN THE RESPECTIVE QUESTION FUNCTION BLOCK
 
+
 */
 
 using System;
@@ -45,7 +46,6 @@ namespace ISM6225_Assignment_2_Spring_2022
             string guess = "7810";
             string hint = GetHint(secret, guess);
             Console.WriteLine("Hint for the guess is :{0}", hint);
-
             Console.WriteLine();
 
 
@@ -53,12 +53,11 @@ namespace ISM6225_Assignment_2_Spring_2022
             Console.WriteLine("Question 5");
             string s = "ababcbacadefegdehijhklij";
             List<int> part = PartitionLabels(s);
-            Console.WriteLine("partation lengths are:");
+            Console.WriteLine("Partation lengths are:");
             for (int i = 0; i < part.Count; i++)
             {
                 Console.Write(part[i] + "\t");
             }
-            Console.WriteLine();
             Console.WriteLine();
 
             //Question 6:
@@ -87,35 +86,29 @@ namespace ISM6225_Assignment_2_Spring_2022
             Console.WriteLine();
 
 
-
             //Question 8:
             Console.WriteLine("Question 8");
             string[] bulls_string13 = { "gin", "zen", "gig", "msg" };
             int diffwords = UniqueMorseRepresentations(bulls_string13);
             Console.WriteLine("Number of with unique code are: {0}", diffwords);
-
             Console.WriteLine();
             Console.WriteLine();
-
 
             //Question 9:
-            Console.WriteLine("Question 15");
+            Console.WriteLine("Question 9");
             int[,] grid = { { 0, 1, 2, 3, 4 }, { 24, 23, 22, 21, 5 }, { 12, 13, 14, 15, 16 }, { 11, 17, 18, 19, 20 }, { 10, 9, 8, 7, 6 } };
             int time = SwimInWater(grid);
             Console.WriteLine("Minimum time required is: {0}", time);
             Console.WriteLine();
 
-
             //Question 10:
-            Console.WriteLine("Question 16");
+            Console.WriteLine("Question 10");
             string word1  = "horse";
             string word2 = "ros";
             int minLen = MinDistance( word1,  word2);
             Console.WriteLine("Minimum number of operations required are {0}", minLen);
             Console.WriteLine();
         }
-
-
     
 
         /*
