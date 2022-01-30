@@ -18,7 +18,7 @@ namespace ISM6225_Assignment_2_Spring_2022
 
             //Question 1:
             Console.WriteLine("Question 1:");
-            int[] nums1 = { 0, 1, 0, 3, 12 };
+            int[] nums1 = { 0, 1, 2, 3, 12 };
             Console.WriteLine("Enter the target number:");
             int target = Int32.Parse(Console.ReadLine());
             int pos = SearchInsert(nums1, target);
